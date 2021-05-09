@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @author W
+ * @author Wangchao
  * @version 1.0
- * @description TODO
+ * @description 订单Controller
  * @date 2021/5/9 20:36
  */
 @RestController
@@ -37,8 +37,10 @@ public class OrderController {
         return restTemplate.postForObject(PAYMENT_URL + "/payment/create", payment, CommonResult.class);
     }
 
+
     /**
      * 根据id 获取订单
+     *
      * @param id 订单id
      * @return 消息
      */

@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 /**
  * @author Wangchao
  * @version 1.0
- * @description 统一返回类
+ * @description 公共返回类
  * @date 2021/5/1 21:23
  */
 @Data
@@ -21,7 +21,7 @@ public class CommonResult<T> {
 
     private T data;
 
-    public CommonResult(Integer code, String message){
+    public CommonResult(Integer code,String message){
         this(code,message,null);
     }
 
